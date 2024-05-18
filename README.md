@@ -4,7 +4,7 @@
 This is a simple password manager project built with Next.JS.
 
 Check it out line on vercel:
-https://pass-guard-syeda-hoorain-ali.vercel.app
+https://pass-guard-hoorain.vercel.app
 
 ## Features
 
