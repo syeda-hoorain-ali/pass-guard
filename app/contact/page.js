@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import { toast } from 'react-toastify'
 
-const page = () => {
+const Page = () => {
 	const [form, setForm] = useState({ email: '', subject: '', message: '', })
 
 	const handleInput = (e) => {
@@ -88,4 +88,4 @@ const page = () => {
 	</>)
 }
 
-export default page
+export default Page

@@ -21,17 +21,17 @@ const page = () => {
 
       <ul>
         <li><b className='text-lg'>Privacy:</b> We respect your privacy and never store your passwords on our servers. Your data is always stored locally on your device.</li>
-        <li><b className='text-lg'>Security:</b> We're committed to keeping your passwords safe and secure, using the latest security best practices and technologies.</li>
-        <li><b className='text-lg'>Transparency:</b> We're open and honest about how we store and manage your data, so you can trust us with your sensitive information.</li>
+        <li><b className='text-lg'>Security:</b> We&apos;re committed to keeping your passwords safe and secure, using the latest security best practices and technologies.</li>
+        <li><b className='text-lg'>Transparency:</b> We&apos;re open and honest about how we store and manage your data, so you can trust us with your sensitive information.</li>
       </ul>
 
       <h2 className='font-bold text-2xl my-4'>Get in Touch</h2>
 
-      <p>If you have any questions, feedback, or suggestions, please don't hesitate to contact us. We're always looking for ways to improve and make Password Manager even better for you.</p>
+      <p>If you have any questions, feedback, or suggestions, please don&apos;t hesitate to contact us. We&apos;re always looking for ways to improve and make Password Manager even better for you.</p>
 
       <h3 className='font-bold text-xl my-4'>Thanks for Choosing Password Manager!</h3>
 
-      <p>Remember, your security and privacy are our top priorities. We're glad you've chosen Password Manager to help protect your online identity.</p>
+      <p>Remember, your security and privacy are our top priorities. We&apos;re glad you&apos;ve chosen Password Manager to help protect your online identity.</p>
 
       <div className='flex gap-4 mt-3'>
         <button className='text-3xl'>
