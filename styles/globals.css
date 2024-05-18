@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .myContainer {
+    @apply container px-40 py-10 pb-0 mx-auto
+  }
+
+  .input {
+    @apply rounded-full border border-green-500 w-full p-4 py-1;
+  }
+}
+
+.fa-solid::after {
+  content: ' ';
+  font-size: 8px;
+  letter-spacing: 1px;
+  transition: 0.5s all;
+  @apply bg-slate-800 text-white p-1 absolute -top-5 -left-1/2 cursor-pointer opacity-0 font-light
+}
+
+.fa-solid:hover::after {
+  opacity: 1;
+}
