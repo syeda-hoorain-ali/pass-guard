@@ -1,7 +1,6 @@
 import Link from 'next/link';
-import React from 'react';
 
-const page = () => {
+const AboutPage = () => {
   return (<>
     <div className='p-4'>
       <h1 className='font-bold text-4xl my-5'>Welcome to Password Manager</h1>
@@ -57,4 +56,4 @@ const page = () => {
   </>)
 }
 
-export default page
+export default AboutPage

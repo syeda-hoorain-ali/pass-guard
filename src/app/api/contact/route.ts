@@ -1,11 +1,11 @@
 import { NextResponse } from "next/server"
 import { createTransport } from 'nodemailer';
 
-export const POST = async (req) => {
+export const POST = async (req: Request) => {
     try {
         const body = await req.json();
 
-        let transporter = createTransport({
+        const transporter = createTransport({
             service: 'gmail',
             auth: {
                 user: process.env.NEXT_PUBLIC_EMAIL,
@@ -13,7 +13,7 @@ export const POST = async (req) => {
             }
         });
 
-        let info = await transporter.sendMail({
+        const info = await transporter.sendMail({
             from: body.email,
             to: process.env.NEXT_PUBLIC_EMAIL,
             subject: body.subject,
@@ -21,17 +21,16 @@ export const POST = async (req) => {
         })
 
         return NextResponse.json({
-            status: 200,
-            message: 'message send successfully',
+            success: true,
+            message: 'Message send successfully',
             id: info.messageId
         });
 
     } catch (error) {
-        console.log("error message: " + error.message);
+        console.log(error);
         return NextResponse.json({
-            status: 500,
-            message: "message could not send",
-            error: error.message
-        })
+            success: false,
+            message: "Internal server error"
+        }, { status: 500 })
     }
 }

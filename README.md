@@ -1,4 +1,3 @@
-
 # Password Manager Project
 
 This is a simple password manager project built with Next.JS.
